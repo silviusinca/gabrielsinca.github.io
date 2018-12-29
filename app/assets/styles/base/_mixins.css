@@ -1,0 +1,38 @@
+@define-mixin atSmall{
+	@media(min-width: 530px){
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium{
+	@media(min-width: 800px){
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge{
+	@media(min-width: 1010px){
+		@mixin-content;
+	}
+}
+
+@define-mixin atVeryLarge{
+	@media(min-width:1920px){
+		@mixin-content;
+	}
+}
+
+@define-mixin clearfix{
+	&::after{
+		content:"";
+		clear:both;
+		display: table;
+	}
+}
+
+@define-mixin parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

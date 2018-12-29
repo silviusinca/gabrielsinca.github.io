@@ -1,0 +1,23 @@
+.primary-nav{
+    margin: 0;
+    
+    li{
+        display: block;
+        margin-right: 30px;
+        float:left;
+
+        @mixin atMedium {
+        }
+
+        a{
+            color: #fff;
+        }
+    }
+
+    ul {
+        float: right;
+        list-style: none;
+    }
+
+
+}

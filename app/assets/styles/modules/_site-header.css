@@ -1,0 +1,14 @@
+.site-header{
+    padding: 5px 0;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba($blue, .4);
+    width: 100%;
+
+    @mixin atMedium {
+        position:fixed;
+
+    }
+
+}

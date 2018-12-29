@@ -1,0 +1,14 @@
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_primary-nav";
+@import "modules/_site-header";
+
+/* DELETE THIS LATER *. 
+img{
+    width:300px;
+    height: 300px;
+}
+/* DELETE THIS LATER */
