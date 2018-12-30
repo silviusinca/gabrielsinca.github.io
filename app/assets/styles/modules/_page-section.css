@@ -1,0 +1,72 @@
+.page-section {
+    padding-top: 2rem;
+    margin-top: 90px;
+
+    &__section-title{
+        font-size: 3rem;
+        padding: 10px 0;
+        font-weight: 300;
+        text-align:center;
+        
+        @mixin atMedium{
+            font-size: 4rem;
+        }
+
+        strong{
+            font-weight: 500;
+            color: $orange;
+
+        }
+    }
+    h1{
+		position:relative;
+	}
+	h1::after {
+		content:'';
+		position:absolute;
+		width:100px;
+		height:3px;
+		background:$orange;
+		bottom:0;
+		left:0;
+		right:0;
+        margin:auto;
+    }
+    
+    &__section-subtitle{
+        font-weight: 400;
+        font-size: 1.7rem;
+
+        &--center{
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        @mixin atMedium{
+            font-size: 2.4rem;
+        }
+
+        &--smaller{
+            font-weight: 500;
+            font-size: 1.4rem;
+            @mixin atMedium{
+                font-size:1.7rem;
+            }
+        }
+    }
+
+    &__section-description {
+        font-size: 1.1rem;
+        @mixin atMedium{
+            font-size: 1.2rem;
+        }
+
+        strong{
+            color: $orange;
+        }
+    }
+
+    &__link-black{
+        color: #32414d;
+    }
+}

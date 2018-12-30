@@ -3,12 +3,15 @@
     margin: 0;
     position: absolute;
     z-index: 2;
-    background-color: rgba($blue, .4);
+    background-color: #FFF;
     width: 100%;
+    visibility: hidden;
 
     @mixin atMedium {
         position:fixed;
-
+    }
+    @mixin atSmall {
+        visibility: visible;
     }
 
 }

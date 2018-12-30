@@ -1,0 +1,9 @@
+.contact{
+    text-align: center;
+    background-color:#f4f4f4;
+    padding-bottom: 45px;
+    
+    &__text{
+        font-size:1.2rem;
+    }
+}

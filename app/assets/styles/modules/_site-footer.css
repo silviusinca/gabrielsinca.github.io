@@ -1,0 +1,18 @@
+.site-footer{
+    background-color:#393939;
+    color: #fff;
+    padding: 35px 0;
+
+    &__social-header{
+        font-weight:400;
+        text-align: center;
+    }
+
+    &__social-icons{
+        text-align:center;
+    }
+
+    &__text{
+
+    }
+}

@@ -5,10 +5,12 @@
 @import "modules/_large-hero";
 @import "modules/_primary-nav";
 @import "modules/_site-header";
-
-/* DELETE THIS LATER *. 
-img{
-    width:300px;
-    height: 300px;
-}
-/* DELETE THIS LATER */
+@import "modules/_about";
+@import "modules/_page-section";
+@import "modules/_wrapper";
+@import "modules/_row";
+@import "modules/_about-business";
+@import "modules/_portfolio";
+@import "modules/_contact";
+@import "modules/_icons";
+@import "modules/_site-footer"

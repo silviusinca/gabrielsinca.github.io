@@ -1,26 +1,36 @@
 .large-hero {
+    position: relative;
     &--background {
-        background-image: url('../../assets/images/large-hero--background-3.jpeg');
-        height: 800px;
-        @mixin parallax;
+        background-image: url('../../assets/images/large-hero--background.jpg');
+        height: 600px;
+        @mixin atMedium{
+            height: 900px;
+            clip-path: polygon(100% 0, 100% 80%, 20% 100%, 0 85%, 0 0);
+            -webkit-clip-path: polygon(100% 0, 100% 80%, 20% 100%, 0 85%, 0 0);
+            
+            @mixin parallax;        
+        }
         background-position: bottom;
         /*clip-path: polygon(0 0, 100% 0, 100% 100%, 21% 84%, 0 100%);*/
         /*clip-path: polygon(68% 21%, 100% 0, 100% 100%, 0 100%, 0 0);*/
-        clip-path: polygon(100% 0, 100% 80%, 20% 100%, 0 85%, 0 0);
-
+        clip-path: polygon(24% 100%, 100% 78%, 100% 0, 0 0, 0 89%);
+        -webkit-clip-path: polygon(24% 100%, 100% 78%, 100% 0, 0 0, 0 89%);
     }
-    
+
     &__text {
         color: #fff;
         position: absolute;
-        top:50%;
-        left: 0;
         transform: translateY(-50%);
+        left: 0;
         width: 100%;
         text-align:center;
-        @mixin atVeryLarge{
+        top:50%;
+
+        
+        @mixin atVeryLarge {
             top:40%;
         }
+
     }
 
     &__title {
@@ -50,4 +60,4 @@
             font-size: 1.875rem;
         }
     }
-} 
+}
