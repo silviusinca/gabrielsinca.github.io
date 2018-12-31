@@ -13,4 +13,7 @@
 @import "modules/_portfolio";
 @import "modules/_contact";
 @import "modules/_icons";
-@import "modules/_site-footer"
+@import "modules/_site-footer";
+@import "modules/_btn";
+@import "modules/_modal";
+@import "modules/_reveal-item";

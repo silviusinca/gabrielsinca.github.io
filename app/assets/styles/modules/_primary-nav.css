@@ -1,6 +1,6 @@
 .primary-nav{
     margin: 0;
-    
+
     li{
         display: block;
         margin-right: 30px;
@@ -10,7 +10,16 @@
         }
 
         a{
-            color: #000;
+            transition: all .3s ease-out;
+            color: #fff;
+            
+            @mixin atMedium{
+                color: #000;
+            }
+
+            &:hover{
+                color: $orange;
+            }
         }
     }
 

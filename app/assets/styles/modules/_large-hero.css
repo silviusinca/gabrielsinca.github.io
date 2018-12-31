@@ -55,7 +55,6 @@
 
     &__contact{
         font-size: 1.1rem;
-        margin: 0;
         @mixin atSmall{
             font-size: 1.875rem;
         }

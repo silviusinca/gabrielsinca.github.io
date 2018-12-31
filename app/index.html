@@ -6,29 +6,35 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
   <title>Gabriel Sinca</title>
   <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png" />
-  <meta name="keywords" content="Portfolio website, website, site, programare, gabriel, sinca, gabrielsinca, freelancer, contact">
+  <meta name="keywords" content="portfolio, website, gabrielsinca, freelancer">
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+    crossorigin="anonymous"></script>
 
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
-    crossorigin="anonymous"></script>
   <!-- endbuild -->
 
 </head>
 
-<body>
+<body id="home">
   <header class="site-header">
     <div class="wrapper">
-      <nav class="primary-nav">
-        <ul>
-          <li><a href="#">Who Am I?</a></li>
-          <li><a href="#">Why Am I Here?</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-          <!--<li><a href="#">Testimonials</a></li>-->
-          <!--<li><a href="#">Skills</a></li>-->
-        </ul>
-      </nav>
+
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+
+      <div class="site-header__menu-content">
+        <nav class="primary-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Who Am I?</a></li>
+            <li><a href="#about-business">Why Am I Here?</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     </div>
   </header>
@@ -37,11 +43,11 @@
     <div class="large-hero__text">
       <h1 class="large-hero__title">Gabriel Sinca</h1>
       <p class="large-hero__subtitle">Web Developer. Mentor. Human.</p>
-      <p class="large-hero__contact"><a href="#">Contact me!</a></p>
+      <p class="large-hero__contact"><a class="btn btn--orange open-modal" href="#">Get in touch</a></p>
     </div>
   </div>
 
-  <div class="page-section">
+  <div class="page-section" id="about">
     <div class="wrapper">
       <div class="about">
         <h1 class="page-section__section-title"><strong>Who</strong> Am I?</h1>
@@ -50,22 +56,16 @@
             <img class="about__image" src="./assets/images/me.jpg" alt="Sinca Silviu Gabriel">
           </div>
           <div class="row__medium-8">
-            <p class="page-section__section-description about__text">I'm a romanian student passionate about anything
-              related to technology, especially web development and A.I. I'd like to consider myself as an aspiring
-              entrepreneur. My goal is to never get hired and to always work for myself. I've been building websites
-              for fun for more than 2 years now and I've finally decided to start my microbusiness by making websites
-              professionally, while still having fun. The main technologies I use are HTML, CSS, and Javascript and
-              WordPress. If you want to know more about my work feel free to contact me <a>here</a>.</p>
+            <p class="page-section__section-description about__text">I'm Gabriel, a romanian student passionate about anything related to technology. When I discovered web development I was hooked by it. I loved and I still love when I see a website going from a blank page to a complex web app. It's an amazing feeling that gives me a lot of motivation and inspiration. And this is why I would be very happy to work with you for my next project!</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="page-section">
+  <div class="page-section" id="about-business">
     <div class="about-business">
       <div class="wrapper">
-
         <h1 class="page-section__section-title"><strong>Why</strong> Am I Here?</h1>
         <h2 class="page-section__section-subtitle">I'm here to help you and your business!</h2>
         <p class="page-section__section-description">My purpose is to help entrepreneurs like you, with small or medium
@@ -80,7 +80,7 @@
             </div>
             <div class="row__medium-3">
               <i class="fas fa-user-friends icon icon--orange"></i>
-              <p class="page-section__section-description">More people will know about you through the website</p>
+              <p class="page-section__section-description">More people will find your business through the website</p>
             </div>
             <div class="row__medium-3">
               <i class="fas fa-chart-line icon icon--orange"></i>
@@ -96,57 +96,50 @@
     </div>
   </div>
 
-  <div class="page-section">
+  <div class="page-section" id="portfolio">
+    <h1 class="page-section__section-title">Portfolio</h1>
+    <h2 class="page-section__section-subtitle page-section__section-subtitle--center">Here is some of my work:</h2>
     <div class="wrapper">
-      <h1 class="page-section__section-title">Portfolio</h1>
-      <h2 class="page-section__section-subtitle page-section__section-subtitle--center">Here is some of my work:</h2>
-      <div class="row row--gutters">
-        <a class="page-section__link-black" href="http://Firstkinetic.ro">
-          <div class="portfolio-item row__medium-6">
-            <img class="portfolio-item__image" src="./assets/images/portfolio-0.png" alt="">
-            <div class="portfolio-item__text">
-              <h3>Lorem</h3>
-              <p>This is the webite that I built for Firstkinetic, a wonderful kinetotherapy clinic located in Braila,
-                Romania</p>
-            </div>
-          </div>
-        </a>
-        <a class="page-section__link-black" href="https://gabrielsincaa.000webhostapp.com/">
-          <div class="portfolio-item row__medium-6">
-            <img class="portfolio-item__image" src="./assets/images/portfolio-1.png" alt="">
-            <div class="portfolio-item__text">
-              <h3>Lorem</h3>
-              <p>This is one of the example websites I built.</p>
-            </div>
-          </div>
-        </a>
-      </div>
 
-      <div class="row row--gutters">
-        <a class="page-section__link-black" href="https://gabrielsinca.github.io/travel-site">
-          <div class="portfolio-item row__medium-6">
-            <img class="portfolio-item__image" src="./assets/images/portfolio-2.jpg" alt="">
-            <div class="portfolio-item__text">
-              <h3>Lorem</h3>
-              <p>This is one of the example websites I built.</p>
-            </div>
-          </div>
-        </a>
-        <a class="page-section__link-black" href="https://gabrielsinca.github.io">
+    <section class="gallery">
+      <figure class="gallery__item">
+        <a href="http://firstkinetic.ro/" target="_blank">
+          <img src="./assets/images/portfolio-0.png" alt="" class="gallery__image">
+          <figcaption class="gallery__image-caption">
+            Dynamic website built with WordPress
+          </figcaption>
+      </figure></a>
 
-          <div class="portfolio-item row__medium-6">
-            <img class="portfolio-item__image" src="./assets/images/example_website_3.png" alt="">
-            <div class="portfolio-item__text">
-              <h3>Lorem</h3>
-              <p>This is one of the example websites I built.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
+
+      <figure class="gallery__item">
+        <a href="https://gabrielsincaa.000webhostapp.com/" target="_blank">
+          <img class="gallery__image" src="./assets/images/portfolio-1.png">
+          <figcaption class="gallery__image-caption">
+            Static website built with HTML, CSS and Javascript
+          </figcaption>
+      </figure></a>
+
+      <figure class="gallery__item">
+        <a href="https://gabrielsinca.github.io/travel-site" target="_blank">
+          <img class="gallery__image" src="./assets/images/portfolio-2.jpg">
+          <figcaption class="gallery__image-caption">
+            Dynamic website built with HTML, CSS, Node.js and Javascript
+          </figcaption>
+      </figure></a>
+
+      <figure class="gallery__item">
+        <a href="https://gabrielsinca.github.io" target="_blank">
+          <img class="gallery__image" src="./assets/images/portfolio-3.png">
+          <figcaption class="gallery__image-caption">
+            Static website built with HTML and CSS
+          </figcaption>
+      </figure></a>
+
+    </section>
+</div>
   </div>
 
-  <div class="page-section">
+  <div class="page-section" id="contact">
     <div class="contact">
       <div class="wrapper">
         <h1 class="page-section__section-title">Contact me!</h1>
@@ -162,8 +155,8 @@
           <div class="row__medium-6">
             <div class="social social--email">
               <i class="far fa-envelope icon icon--orange"></i>
-              <p class="contact__text">contact@gabrielsinca.com</p>
-              <p class="contact__text">gabrielsinca14@gmail.com</p>
+              <p class="contact__text">contact@gabrielsinca.com<br> gabrielsinca14@gmail.com
+              </p>
             </div>
           </div>
         </div>
@@ -178,7 +171,7 @@
       <div class="row row--gutters">
         <div class="row__medium-8">
           <p class="site-footer__text">Copyright &copy; 2019 Sinca Silviu Gabriel. All rights reserved. <a href="#"
-              class="btn open-modal">Get In Touch</a></p>
+              class="btn btn--orange open-modal">Get In Touch</a></p>
         </div>
         <div class="row__medium-4">
           <h3 class="site-footer__social-header">Social media</h3>
@@ -192,8 +185,27 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="page-section__section-subtitle"><i class="far section-title__icon fa-envelope icon icon--orange"></i> Get
+        in <strong>Touch</strong></h2>
+      <div class="wrapper wrapper--narrow">
+        <p class="modal__description">Please feel free to contact me anytime! I'll try my best to respond as fast as possible!</p>
+      </div>
+      <div class="social-icons">
+          <a class="social-icons__icon" href="https://www.instagram.com/silviusinca/"><i class="fab fa-instagram icon icon--orange"></i></a>
+          <a class="social-icons__icon" href="https://www.facebook.com/silviu.sinca"><i class="fab fa-facebook icon icon--orange"></i></a>
+          <a class="social-icons__icon" href="https://twitter.com/gabriel_sinca"><i class="fab fa-twitter icon icon--orange"></i></a>
+          <a class="social-icons__icon" href="https://github.com/gabrielsinca/"><i class="fab fa-github icon icon--orange"></i></a>
+      </div>
+    </div>
+    <div class="modal__close">X</div>
+  </div>
 
-  <script src="./temp/scripts/App.js"></script>
+  <!-- build:js assets/scripts/App.js -->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
+
 </body>
 
 </html>

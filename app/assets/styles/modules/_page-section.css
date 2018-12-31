@@ -1,15 +1,17 @@
 .page-section {
     padding-top: 2rem;
     margin-top: 90px;
+    line-height: 1.3;
+    letter-spacing: 1.1px;
 
     &__section-title{
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 10px 0;
         font-weight: 300;
         text-align:center;
         
         @mixin atMedium{
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
 
         strong{
