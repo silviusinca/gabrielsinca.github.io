@@ -729,13 +729,13 @@ a{
 
 .about__text{
         padding-top: 15px;
-        margin-left: 60px;
     }
 
 @media(min-width: 530px){
 
 .about__text{
-            padding-top: 0
+            padding-top: 0;
+            margin-left: 60px
     }
 	}
 
@@ -1129,7 +1129,7 @@ a{
                 transform: scaleX(1.2);
         -webkit-transform-origin: 100% 0;
                 transform-origin: 100% 0;
-        color: blue;
+        color: #e67e22;
     }
 
 .modal__close:hover {

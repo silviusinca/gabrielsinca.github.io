@@ -9,3 +9,4 @@ var modal = new Modal();
 new RevealOnScroll($(".gallery"), "65%");
 new RevealOnScroll($(".about-business__routine"), "60%");
 var stickyHeader = new StickyHeader();
+

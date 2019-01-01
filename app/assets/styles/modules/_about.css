@@ -9,10 +9,11 @@
 
     &__text{
         padding-top: 15px;
-        margin-left: 60px;
         
         @mixin atSmall{
             padding-top: 0;
+            margin-left: 60px;
+
         }
 
         @mixin atLarge{

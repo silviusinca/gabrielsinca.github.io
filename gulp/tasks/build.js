@@ -11,13 +11,13 @@ gulp.task('previewDist', function(){
 	browserSync.init({
 		notify:false,
 		server: {
-			baseDir: "docs"
+			baseDir: "dist"
 		}
 	});
 });
 
 gulp.task('deleteDistFolder',function(){
-    return del("./docs")
+    return del("./dist")
 });
 
 gulp.task('optimizeImages',['deleteDistFolder'], function(){
@@ -27,7 +27,7 @@ gulp.task('optimizeImages',['deleteDistFolder'], function(){
         interlaced: true,
         multipass:true
     }))
-    .pipe(gulp.dest("./docs/assets/images"))
+    .pipe(gulp.dest("./dist/assets/images"))
 });
 
 gulp.task('useminTrigger', ['deleteDistFolder'], function(){
@@ -40,7 +40,7 @@ gulp.task('usemin', ['deleteDistFolder', 'styles', 'scripts'],function(){
         css: [function() {return rev()}, function(){return cssnano()}],
         js: [function() {return rev()}, function(){return uglify()}]
     }))
-    .pipe(gulp.dest("./docs"))
+    .pipe(gulp.dest("./dist"))
 });
 
 gulp.task('build', ['deleteDistFolder','optimizeImages', 'useminTrigger']);
